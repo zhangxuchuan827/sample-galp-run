@@ -1,6 +1,6 @@
 {
   "name": "zxc-pages",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Awesome node module",
   "keywords": [
     "zxc-pages",
@@ -17,7 +17,7 @@
     "bin"
   ],
   "main": "lib/index.js",
-  "bin": "bin/zce-pages.js",
+  "bin": "bin/z-run.js",
   "directories": {
     "lib": "lib"
   },
