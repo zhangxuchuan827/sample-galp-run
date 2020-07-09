@@ -1,14 +1,14 @@
 {
-  "name": "zce-pages",
-  "version": "0.1.0",
+  "name": "zxc-pages",
+  "version": "0.0.2",
   "description": "Awesome node module",
   "keywords": [
-    "zce-pages",
-    "zce"
+    "zxc-pages",
+    "zxc"
   ],
-  "homepage": "https://github.com/zce/zce-pages#readme",
+  "homepage": "https://github.com/zhangxuchuan827/sample-gulp-run#readme",
   "bugs": {
-    "url": "https://github.com/zce/zce-pages/issues"
+    "url": "https://github.com/zhangxuchuan827/sample-gulp-run/issues"
   },
   "license": "Apache",
   "author": "zhangxuchuan <zhangxuchuan827@163.com>",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zce/zce-pages.git"
+    "url": "git+https://github.com/zhangxuchuan827/sample-gulp-run.git"
   },
   "scripts": {
     "lint": "standard --fix"
@@ -36,6 +36,7 @@
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
+    "gulp-deploy-ftp": "^1.0.1",
     "gulp-eslint": "^6.0.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
