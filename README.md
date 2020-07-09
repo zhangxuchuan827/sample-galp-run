@@ -1,4 +1,4 @@
-# zce-pages
+# zxc-pages
 
 [![NPM Downloads][downloads-image]][downloads-url]
 [![NPM Version][version-image]][version-url]
@@ -12,18 +12,80 @@
 ## Installation
 
 ```shell
-$ npm install zce-pages
+$ npm install zxc-pages
 
 # or yarn
-$ yarn add zce-pages
+$ yarn add zxc-pages
 ```
+
+```
+命令：
+
+z-run clean
+z-run serve
+z-run build
+z-run clean
+z-run lint
+z-run start
+z-run deploy
+```
+```
+配置文件【zrun.config.js】：
+module.exports = {
+  data: {
+    menus: [{
+        name: 'Home',
+        icon: 'aperture',
+        link: 'index.html'
+      }, {
+        name: 'Feature',
+        link: 'feature.html'
+      },
+      {
+        name: 'About',
+        link: 'about.html'
+      }, {
+        name: 'Contact',
+        link: '#',
+        children: [{
+            name: 'Twitter',
+            link: 'index.html'
+          },
+          {
+            name: 'Facebook',
+            link: 'index.html'
+          },
+        ]
+      }
+    ],
+    pkg: require('./package.json'),
+    date: new Date()
+  },
+  build: {
+    src: 'src',
+    dist: 'dist',
+    public: 'public'
+  },
+  deploy: {
+    remotePath: 'dist',
+    host: '',
+    port: 21,
+    user: '',
+    pass: ''
+  }
+}
+
+
+
+```
+
 
 ## Usage
 
 <!-- TODO: Introduction of API use -->
 
 ```javascript
-const zcePages = require('zce-pages')
+const zcePages = require('zxc-pages')
 const result = zcePages('zce')
 // result => 'zce@zce.me'
 ```
@@ -62,17 +124,3 @@ const result = zcePages('zce')
 
 [Apache](LICENSE) &copy; zhangxuchuan <zhangxuchuan827@163.com>
 
-
-
-[downloads-image]: https://img.shields.io/npm/dm/zce-pages.svg
-[downloads-url]: https://npmjs.org/package/zce-pages
-[version-image]: https://img.shields.io/npm/v/zce-pages.svg
-[version-url]: https://npmjs.org/package/zce-pages
-[license-image]: https://img.shields.io/github/license/zce/zce-pages.svg
-[license-url]: https://github.com/zce/zce-pages/blob/master/LICENSE
-[dependency-image]: https://img.shields.io/david/zce/zce-pages.svg
-[dependency-url]: https://david-dm.org/zce/zce-pages
-[devdependency-image]: https://img.shields.io/david/dev/zce/zce-pages.svg
-[devdependency-url]: https://david-dm.org/zce/zce-pages?type=dev
-[style-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
-[style-url]: https://standardjs.com
